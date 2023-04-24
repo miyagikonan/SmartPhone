@@ -6,14 +6,18 @@ public class Account {
     String address;
 
     public Account(String name,String tel,String email,String address){
-        name = "";
-        tel = "";
-        email = "";
-        address = "";
+        this.name = name;
+        this.tel = tel;
+        this.email = email;
+        this.address = address;
     }
 
-    public void getAccountInfo(){
-
+    public String getAccountInfo(){
+        String accountInfo = "Name: "  + name + "/";
+        accountInfo += "Tel: " + tel + "/";
+        accountInfo += "Email: "+ email + "/";
+        accountInfo += "Address: "+ address + "/";
+        return accountInfo;
     }
 
 }
